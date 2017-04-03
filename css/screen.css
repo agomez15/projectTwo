@@ -8,12 +8,69 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* ===== BASE STYLES ===== */
 
+html {
+	font-size: 1.375em; /* 22px */
+	line-height: 1.182em; /* 22px based on 22px font size value */
+  padding: 1.182em; /* 26px / ~ 120%  */
+  font-family: sans-serif, serif;
+  text-rendering: optimizeLegibility;
+   
+  min-width: 3.5em;
+  
+}
 
 /* Responsive Media */
 img, audio, video {
   display: block;
   max-width: 100%;
 }
+
+
+/* ======== NAV STYLES ======= */
+
+.navbar {
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  
+  box-sizing: border-box;
+  
+  list-style-type: none;
+  
+  text-align: center;
+  
+  color: #ffffff;
+  background-color: #dc143c;
+  
+}
+
+.navbar .nav {
+  
+   
+  text-decoration: none;
+  font-weight: bold;
+    
+}
+
+.navbar .nav a {
+  
+  display: block;
+  text-decoration: none;
+  padding: .5em;
+  
+  
+}
+
+.navbar .nav a:hover,
+.navbar .nav a:active,
+.navbar .nav.active a {
+  
+  
+  background-color: #f0ffff; 
+  color: #0000ff;
+
+}
+
 
 /* ===== LAYOUT STYLES ===== */
 
