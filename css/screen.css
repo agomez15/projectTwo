@@ -7,7 +7,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* ===== BASE STYLES ===== */
-
+label{
+	display: block;
+}
 
 /* Responsive Media */
 img, audio, video {
