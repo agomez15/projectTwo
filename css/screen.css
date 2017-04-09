@@ -7,10 +7,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* ===== BASE STYLES ===== */
-
 <<<<<<< HEAD
 =======
-
 html {
 	font-size: 1.375em; /* 22px */
 	line-height: 1.182em; /* 22px based on 22px font size value */
@@ -20,8 +18,8 @@ html {
    
   min-width: 3.5em;
   
->>>>>>> 794e5a46e381f5c175eaa1a67fff7b96ec084197
-}
+
+
 
 /* Responsive Media */
 img, audio, video {
@@ -76,6 +74,7 @@ img, audio, video {
 }
 
 
+=
 /* ===== LOGIN STYLES ===== */
 
 label{
@@ -106,8 +105,6 @@ border: thin solid;
 margin-bottom: 1.5em;
 background-color:transparent;
 }
-
-
 /* ===== LAYOUT STYLES ===== */
 
 
