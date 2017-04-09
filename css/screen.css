@@ -7,8 +7,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* ===== BASE STYLES ===== */
-<<<<<<< HEAD
-=======
+
 html {
 	font-size: 1.375em; /* 22px */
 	line-height: 1.182em; /* 22px based on 22px font size value */
@@ -74,7 +73,8 @@ img, audio, video {
 }
 
 
-=
+
+
 /* ===== LOGIN STYLES ===== */
 
 label{
