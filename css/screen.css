@@ -88,6 +88,7 @@ margin: 5em;
 position:fixed;
 border-bottom: dashed;
 border-spacing: 2em;
+padding: 3em;
 }
 
 #picture{
@@ -100,10 +101,10 @@ border-spacing: 2em;
 }
 
 input{
-
-border: none;
+height: 2em;
+border: thin solid;
 margin-bottom: 1.5em;
-background-color:#FFFFB5;
+background-color:transparent;
 }
 
 
