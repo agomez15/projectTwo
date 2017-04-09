@@ -24,7 +24,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   text-align: center;
   
   color: #ffffff;
-  background-color: #dc143c;
+  background-color: #E9E9E9;
   
 }
 
@@ -65,7 +65,7 @@ html {
   text-rendering: optimizeLegibility;
    
   min-width: 3.5em;
-  background-color: black;
+  background-color:#dbdbdb;
   color: white;
   
 
@@ -101,9 +101,11 @@ label{
 form{
 margin: 5em;
 position:fixed;
-border-bottom: dashed;
+border: solid thin;
 border-spacing: 2em;
-padding: 3em;
+padding: 3.5em;
+border-radius: 10%;
+background-color: white;
 }
 
 #picture{
@@ -116,10 +118,22 @@ padding: 3em;
 }
 
 input{
-height: 2em;
-border: thin solid;
+height: 3em;
+width: 150%;
+border-style: dotted solid;
 margin-bottom: 1.5em;
-background-color: transparent;
+float: right;
+background-color: white;
+border-radius: 5%;
+}
+}
+
+header[id ="login"]{
+ background-color: red;
+ padding-bottom: 2em;
+ margin-left: -1em;
+ margin-right: -1em;
+ margin-top: -1em;
 }
 
 /* ===== LAYOUT STYLES ===== */
