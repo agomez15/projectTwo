@@ -17,7 +17,8 @@ html {
    
   min-width: 3.5em;
   
-}
+
+
 
 /* Responsive Media */
 img, audio, video {
@@ -72,6 +73,38 @@ img, audio, video {
 }
 
 
+
+
+/* ===== LOGIN STYLES ===== */
+
+label{
+	display: block;
+
+}
+
+form{
+margin: 5em;
+position:fixed;
+border-bottom: dashed;
+border-spacing: 2em;
+padding: 3em;
+}
+
+#picture{
+	position:s fixed;
+	margin-left: 15em;
+	margin-top: 15em;
+	width: 50%;
+	height: 100%;
+	float: right;
+}
+
+input{
+height: 2em;
+border: thin solid;
+margin-bottom: 1.5em;
+background-color:transparent;
+}
 /* ===== LAYOUT STYLES ===== */
 
 
