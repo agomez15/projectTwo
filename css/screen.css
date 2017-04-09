@@ -16,6 +16,10 @@ html {
   text-rendering: optimizeLegibility;
    
   min-width: 3.5em;
+  background-color: black;
+  color: white;
+  
+
   
 }
 
@@ -25,6 +29,17 @@ img, audio, video {
   max-width: 100%;
 }
 
+h2 {
+  
+  font-size: 1.5em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  
+}
+
+
+
+/* ===== LAYOUT STYLES ===== */
 
 /* ======== NAV STYLES ======= */
 
@@ -46,7 +61,7 @@ img, audio, video {
 
 .navbar .nav {
   
-   
+  
   text-decoration: none;
   font-weight: bold;
     
@@ -71,8 +86,22 @@ img, audio, video {
 
 }
 
+/* ====== Headers ======== */
 
-/* ===== LAYOUT STYLES ===== */
+section[id="welcome"] {
+  
+  display: box-border;
+  background color: #dc143c;
+  padding-bottom: 1.0em;
+  
+}
+
+section[id="academics"] {
+  
+  display: box-border;
+  background-color: #dc143c;
+  
+}
 
 
 /* ===== MODULAR STYLES ===== */
