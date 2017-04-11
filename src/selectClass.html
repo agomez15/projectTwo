@@ -11,7 +11,7 @@
   </head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" >
   </script>
-  <script src="js/selectClass.js"></script>
+  <script src="../js/selectClass.js"></script>
   <header>
     <nav id="main-nav">
       <ul id="nav" class="navbar">
@@ -31,10 +31,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/site.js"></script>
 <h1> SELECT YOUR CLASS</h1>
-<!--Adding drop down list in floating panel-->
+<!--Adding drop down list in floating panel
 <div id="floating-panel">
       <strong>Subjects:</strong>
-      <select id="Graduate Classes">
+      <select id="Classes" name="Classes">
         <option value="Advanced Architecture">Architecture</option>
         <option value="Architecture and Urbanism">Architecture and Urbanism</option>
         <option value="Art and Architectural History">Art and Architectural History</option>
@@ -44,7 +44,7 @@
         <option value="Chemical Engineering">Chemical Engineering</option>
         <option value="Chemistry">Chemistry</option>
         <option value="Civil and Architectural Engineering">Civil and Architectural Engineering</option>
-        <option value="Computer Science">Computer Science INC</option>
+        <option value="Computer Science">Computer Science</option>
         <option value="Economics">Economics</option>
         <option value="Electrical Engineering">Electrical Engineering</option>
         <option value="Engineering Management">Engineering Management</option>
@@ -53,24 +53,27 @@
         <option value="Political Science">Political Science</option>
         <option value="Psychology">Psychology</option>
     </div>
-<!--Div tables for classes below-->
-<div id="Advanced Architecture"><a href="#">Advanced Architecture</a></div>
-<div id="Architecture and Urbanism"><a href="#">Architecture and Urbanism</a></div>
-<div id="Art and Architectural History"><a href="#">Art and Architectural History</a></div>
-<div id="Biology"><a href="#">Biology</a></div>
-<div id="Biomedical Engineering"><a href="#">Biomedical Engineering</a></div>
-<div id="Business"><a href="#">Business</a></div>
-<div id="Chemical Engineering"><a href="#">Chemical Engineering</a></div>
-<div id="Chemistry"><a href="#">Chemistry</a></div>
-<div id="Civil and Architectural Engineering"><a href="#">Civil and Architectural Engineering</a></div>
-<div id="Computer Science"><a href="#">Computer Science</a></div>
-<div id="Economics"><a href="#">Economics</a></div>
-<div id="Electrical Engineering"><a href="#">Electrical Engineering</a></div>
-<div id="Engineering Management"><a href="#">Engineering Management</a></div>
-<div id="Information Technology and Management"><a href="#">Information Technology and Management</a></div>
-<div id="Physics"><a href="#">Physics</a></div>
-<div id="Political Science"><a href="#">Political Science</a></div>
-<div id="Psychology"><a href="#">Psychology</a></div>
+-->
+
+<div>
+  <select>
+    <option>Choose Classes</option>
+    <option value="Advanced Architecture">Advanced Architecture</option>
+    <option value="Architecture and Urbanism">Architecture and Urbanism</option>
+    <option value="Art and Architectural History">Art and Architectural History</option>
+    <option value="Biology">Biology</option>
+    <option value="Biomedical Engineering">Biomedical Engineering</option>
+    <option value="Business">Business</option>
+    <option value="Economics">Economics</option>
+  </select>
+</div>
+<div class="adv box">Advanced Architecture 101 For Freshman</div>
+<div class="urb box">Architecture and Urbanism in France 123</div>
+<div class="art box">Art and Architectural History in Germany 124</div>
+<div class="bio box">Biology For Freshman 104</div>
+<div class="biomed box">Biomedical Engineering MATLAB 211</div>
+<div class="eco box">Macro Economics 302</div>
+<div class="bus box">Business for Entrepeneurs 411</div>
 
 </body>
 </html>
