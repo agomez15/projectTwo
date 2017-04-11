@@ -65,8 +65,8 @@ html {
   text-rendering: optimizeLegibility;
    
   min-width: 3.5em;
-  background-color:#dbdbdb;
-  color: white;
+  background-color:#DBD0B7;
+  color: ;
   
 
   
@@ -104,37 +104,33 @@ position:fixed;
 border: solid thin;
 border-spacing: 2em;
 padding: 3.5em;
-border-radius: 10%;
+border-radius: 2%;
 background-color: white;
 }
 
 #picture{
-	position:s fixed;
-	margin-left: 15em;
-	margin-top: 15em;
+	margin-left: 20em;
+	margin-top: 8em;
 	width: 50%;
 	height: 100%;
-	float: right;
+	position: fixed;
+
+  
 }
 
 input{
 height: 3em;
-width: 150%;
-border-style: dotted solid;
+width: 100%
+border-style: none;
+border-bottom: solid thin;
 margin-bottom: 1.5em;
-float: right;
-background-color: white;
-border-radius: 5%;
-}
+background-color: transparent;
 }
 
-header[id ="login"]{
- background-color: red;
- padding-bottom: 2em;
- margin-left: -1em;
- margin-right: -1em;
- margin-top: -1em;
-}
+<style>
+@media (min-width: )
+
+
 
 /* ===== LAYOUT STYLES ===== */
 table {
@@ -177,9 +173,24 @@ header[id="degree-works"] {
   
 }
 
+header[id ="login"]{
+ background-color: #B00603;
+ padding-bottom: 2em;
+ border-bottom: ;
+ margin-left: -1em;
+ margin-right: -1em;
+ margin-top: -1em;
+}
+
 
 /* ===== MODULAR STYLES ===== */
 
-
+<style>
+@media (max-width: 600px) {
+  #login_picture {
+    display: none;
+  }
+}
+</style>
 /* ===== STATE STYLES ===== */
 
