@@ -16,41 +16,41 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   min-width: 100%;
   margin: 0;
   padding: 0;
-
+  
   box-sizing: border-box;
-
+  
   list-style-type: none;
-
+  
   text-align: center;
-
+  
   color: #ffffff;
   background-color: #E9E9E9;
-
+  
 }
 
 .navbar .nav {
-
-
+  
+  
   text-decoration: none;
   font-weight: bold;
-
+    
 }
 
 .navbar .nav a {
-
+  
   display: block;
   text-decoration: none;
   padding: .5em;
-
-
+  
+  
 }
 
 .navbar .nav a:hover,
 .navbar .nav a:active,
 .navbar .nav.active a {
-
-
-  background-color: #f0ffff;
+  
+  
+  background-color: #f0ffff; 
   color: #0000ff;
 
 }
@@ -63,13 +63,13 @@ html {
   padding: 1.182em; /* 26px / ~ 120%  */
   font-family: sans-serif, serif;
   text-rendering: optimizeLegibility;
-
+   
   min-width: 3.5em;
   background-color:#dbdbdb;
   color: white;
+  
 
-
-
+  
 }
 
 /* Responsive Media */
@@ -79,15 +79,15 @@ img, audio, video {
 }
 
 h3[id="student-name"]{
-
+  
   padding-top: 1.0em;
-
+    
 }
 
 p {
-
+  
   padding: .5em;
-
+  
 }
 
 
@@ -98,64 +98,56 @@ label{
 
 }
 
-form{
+section [id = "login"]{
+background-color: orange;
 margin: 5em;
-position:fixed;
 border: solid thin;
 border-spacing: 2em;
 padding: 3.5em;
-border-radius: 10%;
+border-radius: 1%;
 background-color: white;
 }
 
-#picture{
-	position:s fixed;
-	margin-left: 15em;
-	margin-top: 15em;
+form{
+
+}
+
+section [id = "login_picture"]{
+	margin-left: 20em;
+	margin-top: 8em;
 	width: 50%;
 	height: 100%;
-	float: right;
+	position: fixed;
 }
 
 input{
 height: 3em;
-width: 150%;
-border-style: dotted solid;
+width: 75%;
+margin-left: 3em;
+border-style: none;
+border-bottom: solid thin;
 margin-bottom: 1.5em;
-float: right;
-background-color: white;
-border-radius: 5%;
-}
+background-color: transparent;
 }
 
-header[id ="login"]{
- background-color: red;
- padding-bottom: 2em;
- margin-left: -1em;
- margin-right: -1em;
- margin-top: -1em;
+#submit{
+  width: 20%;
 }
-
 /* ===== LAYOUT STYLES ===== */
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    color: white;
-
 }
 
-
-
 td, th {
-    border: 1px solid black;
+    border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
 }
 
 tr:nth-child(even) {
-    background-color: red;
-
+    background-color: #dddddd;
 }
 
 
@@ -163,27 +155,54 @@ tr:nth-child(even) {
 /* ====== Headers ======== */
 
 header[id="welcome"] {
-
+  
   display: box;
-
+  
 }
 
 header[id="academics"] {
-
-
+  
+  
   display: box-border;
   background-color: #dc143c;
-
+   
 }
 header[id="degree-works"] {
-
+  
   display: box-border;
   background-color: #dc143c;
+  
+}
 
+header[id ="login"]{
+ background-color: #B00603;
+ border-bottom: 1em solid;
+ border-bottom-color: white;
+ padding-bottom: 1em;
+ margin-left: -1em;
+ margin-right: -1em;
+ margin-top: -1em;
 }
 
 
 /* ===== MODULAR STYLES ===== */
 
+<style>
+@media (min-width: 9000px) {
+  #login_picture {
+    margin-left: 2em;
+    float: center;
+    
+  }
+}
 
+@media(max-width: 800px){
+  form [id = "login"]{
+
+  float: center;
+}
+}
+
+</style>
 /* ===== STATE STYLES ===== */
+
