@@ -122,13 +122,17 @@ section [id = "login_picture"]{
 
 input{
 height: 3em;
-width: inherit;
+width: 75%;
+margin-left: 3em;
 border-style: none;
 border-bottom: solid thin;
 margin-bottom: 1.5em;
 background-color: transparent;
 }
 
+#submit{
+  width: 20%;
+}
 /* ===== LAYOUT STYLES ===== */
 table {
     font-family: arial, sans-serif;
@@ -173,7 +177,7 @@ header[id="degree-works"] {
 header[id ="login"]{
  background-color: #B00603;
  border-bottom: 1em solid;
- border-bottom-color: #black;
+ border-bottom-color: white;
  padding-bottom: 1em;
  margin-left: -1em;
  margin-right: -1em;
@@ -186,8 +190,8 @@ header[id ="login"]{
 <style>
 @media (min-width: 9000px) {
   #login_picture {
-    float: top;
-    display: none;
+    margin-left: 2em;
+    float: center;
     
   }
 }
