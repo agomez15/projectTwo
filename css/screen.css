@@ -157,7 +157,10 @@ tr:nth-child(even) {
     background-color: red;
 
 }
-
+th {
+    background-color: black;
+    color: white;
+}
 
 
 /* ====== Headers ======== */
