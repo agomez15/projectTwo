@@ -65,7 +65,7 @@ html {
   text-rendering: optimizeLegibility;
    
   min-width: 3.5em;
-  background-color:#DBD0B7;
+  background-color:#EDE6DA;
   color: ;
   
 
@@ -98,39 +98,36 @@ label{
 
 }
 
-form{
+section [id = "login"]{
+background-color: orange;
 margin: 5em;
-position:fixed;
 border: solid thin;
 border-spacing: 2em;
 padding: 3.5em;
-border-radius: 2%;
+border-radius: 1%;
 background-color: white;
 }
 
-#picture{
+form{
+
+}
+
+section [id = "login_picture"]{
 	margin-left: 20em;
 	margin-top: 8em;
 	width: 50%;
 	height: 100%;
 	position: fixed;
-
-  
 }
 
 input{
 height: 3em;
-width: 100%
+width: inherit;
 border-style: none;
 border-bottom: solid thin;
 margin-bottom: 1.5em;
 background-color: transparent;
 }
-
-<style>
-@media (min-width: )
-
-
 
 /* ===== LAYOUT STYLES ===== */
 table {
@@ -175,8 +172,9 @@ header[id="degree-works"] {
 
 header[id ="login"]{
  background-color: #B00603;
- padding-bottom: 2em;
- border-bottom: ;
+ border-bottom: 1em solid;
+ border-bottom-color: #black;
+ padding-bottom: 1em;
  margin-left: -1em;
  margin-right: -1em;
  margin-top: -1em;
@@ -186,11 +184,21 @@ header[id ="login"]{
 /* ===== MODULAR STYLES ===== */
 
 <style>
-@media (max-width: 600px) {
+@media (min-width: 9000px) {
   #login_picture {
+    float: top;
     display: none;
+    
   }
 }
+
+@media(max-width: 800px){
+  form [id = "login"]{
+
+  float: center;
+}
+}
+
 </style>
 /* ===== STATE STYLES ===== */
 
