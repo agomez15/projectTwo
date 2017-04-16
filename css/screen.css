@@ -133,6 +133,12 @@ background-color: transparent;
 #submit{
   width: 20%;
 }
+
+/* ===== Academics Sytles ====== */
+
+
+
+
 /* ===== LAYOUT STYLES ===== */
 table {
     font-family: arial, sans-serif;
@@ -174,6 +180,18 @@ header[id="degree-works"] {
   
   display: box-border;
   background-color: #dc143c;
+  
+}
+header {
+  
+  display: box-border;
+  background-color: #dc143c;
+  
+}
+
+a {
+ 
+  text-decoration: none;
   
 }
 
