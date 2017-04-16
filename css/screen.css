@@ -117,7 +117,6 @@ section [id = "login_picture"]{
 	margin-top: 8em;
 	width: 50%;
 	height: 100%;
-	position: fixed;
 }
 
 input{
@@ -132,6 +131,7 @@ background-color: transparent;
 
 #submit{
   width: 20%;
+  border: thin;
 }
 /* ===== LAYOUT STYLES ===== */
 table {
@@ -188,7 +188,7 @@ header[id ="login"]{
 /* ===== MODULAR STYLES ===== */
 
 <style>
-@media (min-width: 9000px) {
+@media (min-width: 70px) {
   #login_picture {
     margin-left: 2em;
     float: center;
@@ -196,11 +196,10 @@ header[id ="login"]{
   }
 }
 
-@media(max-width: 800px){
-  form [id = "login"]{
-
-  float: center;
-}
+@media(max-width:px){
+  #login{
+   float: right;
+  }
 }
 
 </style>
