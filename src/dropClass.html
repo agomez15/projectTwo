@@ -133,12 +133,25 @@
     </tr>
     </table>
 
+
+  <script>function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}</script>
+
+  <div class="popup" onclick="myFunction()">Click Here To Drop Your Classes
+  <span class="popuptext" id="myPopup">Your classes have been dropped!</span>
+  </div>
+
+  <h1>Drop These Classes:        |</h1>
+  <span id="txt"></span>
+
+
       <form action="./selectClass.html" > 
-      <button type="submit">Drop Classes</button>
+      <button type="submit">Add Classes</button>
     </form> 
   
-<h1>|Drop These Classes:        |
-<span id="txt"></span>
+
 
 </body>
 </html>
