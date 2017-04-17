@@ -33,7 +33,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
   text-decoration: none;
   font-weight: bold;
-    
+
 }
 
 .navbar .nav a {
@@ -68,7 +68,7 @@ html {
   background-color:#dbdbdb;
 <<<<<<< HEAD
   color: red;
-  
+
 =======
   color: white;
 >>>>>>> c4cadfb10fae7a8be456ed4b21b292e8a7777cdd
@@ -197,7 +197,7 @@ header[id ="login_header"]{
 
   }
   input{
-    
+
   }
   #login_form{
     width: 100%;
@@ -233,7 +233,7 @@ header[id ="login_header"]{
 }
 
 @media only screen and (min-width: 360px) and (max-width: 640px){
-  
+
    #login_section{
     width: 50%;
     height: %;
@@ -251,7 +251,7 @@ header[id ="login_header"]{
 
 #login_picture {
     display: none;
-    
+
   }
 }
 
@@ -269,10 +269,10 @@ header[id ="login_header"]{
       width: 100%;
 
     }
-  
+
   #login_picture {
     display: none;
-    
+
   }
 }
 @media only screen and (max-width: 760px),
@@ -321,10 +321,12 @@ header[id ="login_header"]{
   td:nth-of-type(6):before { content: "Title"; }
   td:nth-of-type(7):before { content: "Day"; }
   td:nth-of-type(8):before { content: "Time"; }
-  td:nth-of-type(9):before { content: "Act"; }
-  td:nth-of-type(10):before { content: "WLACT"; }
-  td:nth-of-type(10):before { content: "Instructor"; }
-  td:nth-of-type(10):before { content: "Date(mm/dd)"; }
+  td:nth-of-type(9):before { content: "CAP"; }
+  td:nth-of-type(10):before { content: "Act"; }
+  td:nth-of-type(11):before { content: "WLACT"; }
+  td:nth-of-type(12):before { content: "Instructor"; }
+  td:nth-of-type(13):before { content: "Date(mm/dd)"; }
+  td:nth-of-type(14):before { content: "Location"; }
 
 
 /* ===== STATE STYLES ===== */
