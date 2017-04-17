@@ -9,7 +9,19 @@
   <link rel="stylesheet" media="screen" href="../css/screen.css" />
   <link rel="stylesheet" media="screen" href="../css/_normalize-form.css" />
   </head>
-  <script>  
+  <script> 
+ function calculate()
+    {
+        document.getElementById("txt").innerHTML = "";
+      var checkBoxes = document.getElementsByName("box");
+      for(var i=0; i < checkBoxes.length;i++)
+      { 
+          if(checkBoxes[i].checked)
+          {           document.getElementById("txt").innerHTML += document.getElementById("lbl_" + checkBoxes[i].id).innerHTML
+          }
+      }
+    
+    }
   </script>
   <script src="../js/selectClass.js"></script>
   <form id="extras" hidden>
