@@ -16,41 +16,41 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   min-width: 100%;
   margin: 0;
   padding: 0;
-
+  
   box-sizing: border-box;
-
+  
   list-style-type: none;
-
+  
   text-align: center;
-
+  
   color: #ffffff;
   background-color: #E9E9E9;
-
+  
 }
 
 .navbar .nav {
-
-
+  
+  
   text-decoration: none;
   font-weight: bold;
-
+    
 }
 
 .navbar .nav a {
-
+  
   display: block;
   text-decoration: none;
   padding: .5em;
-
-
+  
+  
 }
 
 .navbar .nav a:hover,
 .navbar .nav a:active,
 .navbar .nav.active a {
-
-
-  background-color: #f0ffff;
+  
+  
+  background-color: #f0ffff; 
   color: #0000ff;
 
 }
@@ -63,13 +63,13 @@ html {
   padding: 1.182em; /* 26px / ~ 120%  */
   font-family: sans-serif, serif;
   text-rendering: optimizeLegibility;
-
+   
   min-width: 3.5em;
   background-color:#dbdbdb;
   color: white;
+  
 
-
-
+  
 }
 
 /* Responsive Media */
@@ -79,15 +79,15 @@ img, audio, video {
 }
 
 h3[id="student-name"]{
-
+  
   padding-top: 1.0em;
-
+    
 }
 
 p {
-
+  
   padding: .5em;
-
+  
 }
 
 
@@ -135,7 +135,6 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    color: black;
 }
 
 td, th {
@@ -148,7 +147,7 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 th {
-    background-color: #B00603;
+    background-color: black;
     color: white;
 }
 
@@ -156,23 +155,23 @@ th {
 /* ====== Headers ======== */
 
 header[id="welcome"] {
-
+  
   display: box;
-
+  
 }
 
 header[id="academics"] {
-
-
+  
+  
   display: box-border;
   background-color: #dc143c;
-
+   
 }
 header[id="degree-works"] {
-
+  
   display: box-border;
   background-color: #dc143c;
-
+  
 }
 
 header[id ="login_header"]{
@@ -183,7 +182,6 @@ header[id ="login_header"]{
  margin-left: -1em;
  margin-right: -1em;
  margin-top: -1em;
- font-family: 'Roboto Slab', serif;
 }
 
 
@@ -193,13 +191,8 @@ header[id ="login_header"]{
     width: 25%;
 
   }
-}
-
-@media only screen and (max-device-width : 800px) and (max-device-width : 480px){
-
-
-  #login_picture {
-    display: none;
+  input{
+    
   }
   #login_form{
     width: 100%;
@@ -207,7 +200,7 @@ header[id ="login_header"]{
   }
   #login_picture{
     float: right;
-    margin-top:-12em;
+    margin-top: -12em;
     border-radius: 1%;
   }
 }
@@ -218,17 +211,18 @@ header[id ="login_header"]{
     height:25%;
     background-color: white;
     padding-bottom: 1em;
-    margin: 1 auto;
+    margin-top: 0.5em;
+    margin-left: 3em;
   }
 
   input{
-    margin-left: -2em;
+    margin-left: -1em;
     width: 100%;
   }
 
 #login_picture {
-    display: none;
-    
+    width: 100%;
+    margin-left: -0.125em;
   }
 
 }
@@ -258,20 +252,15 @@ header[id ="login_header"]{
 
 @media only screen and (max-width: 480px){
 
-   section{
-   margin:0 auto;  
-   padding: 0;
-   width: 100%;
+   #login_section{
+    width: 75%;
+    height: 100%;
+    background-color: white;
+    margin-top: 0.5em;
+    margin-left: -1em;
+    padding: 2.5em;
   }
-
-    input{
-      width: 100%
-    }
-
     #login_form{
-      position: absolute;
-      top: 50%;
-      left: 50
       width: 100%;
 
     }
@@ -281,4 +270,6 @@ header[id ="login_header"]{
     
   }
 }
+
+
 /* ===== STATE STYLES ===== */
