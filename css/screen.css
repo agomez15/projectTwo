@@ -189,22 +189,15 @@ header[id ="login"]{
 
 
 /* ===== MODULAR STYLES ===== */
-
-<style>
-@media (min-width: 70px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
   #login_picture {
-    margin-left: 2em;
-    float: center;
+    display: none;
     
   }
+
+  
+
 }
 
-@media(max-width:px){
-  #login{
-   float: right;
-  }
-}
-
-</style>
 /* ===== STATE STYLES ===== */
 
