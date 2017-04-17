@@ -41,6 +41,8 @@
       }
 
     }
+
+  
   </script>
 <h1> SELECT YOUR CLASS</h1>
 <!--Adding drop down list in floating panel
@@ -178,16 +180,26 @@
     </tr>
     </table>
 
-<<<<<<< HEAD
+  <script>function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}</script>
+
+  <div class="popup" onclick="myFunction()">Click Here To Add Your Classes
+  <span class="popuptext" id="myPopup">Your classes have been added!</span>
+</div>
+
+  <h1>|Add These Classes:        |</h1>
+  <span id="txt"></span>
+
+
   <form action="./dropClass.html" > 
       <button type="submit">Add Classes</button>
     </form> 
   
-=======
-  <button type="submit" value="./dropClass.html">Submit</button>
 
->>>>>>> 476b4f1d644162227e4b1c2aa034de5d4dfc5220
-<h1>|Add These Classes:        |
-<span id="txt"></span>
+
+
+
 </body>
 </html>
