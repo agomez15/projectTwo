@@ -33,7 +33,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
   text-decoration: none;
   font-weight: bold;
-
+    
 }
 
 .navbar .nav a {
@@ -135,7 +135,6 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    color: black;
 }
 
 td, th {
@@ -148,7 +147,7 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 th {
-    background-color: #B00603;
+    background-color: black;
     color: white;
 }
 
@@ -198,6 +197,52 @@ header[id ="login_header"]{
   #login_section{
     width: 100%;
     height:25%;
+@media only screen and (min-width: 900px){
+  #login_section{
+    width: 25%;
+
+  }
+  input{
+
+  }
+  #login_form{
+    width: 100%;
+    margin-right: -2em;
+  }
+  #login_picture{
+    float: right;
+    margin-top: -12em;
+    border-radius: 1%;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  #login_section{
+    width: 50%;
+    height:25%;
+    background-color: white;
+    padding-bottom: 1em;
+    margin-top: 0.5em;
+    margin-left: 3em;
+  }
+
+  input{
+    margin-left: -1em;
+    width: 100%;
+  }
+
+#login_picture {
+    width: 100%;
+    margin-left: -0.125em;
+  }
+
+}
+
+@media only screen and (min-width: 360px) and (max-width: 640px){
+
+   #login_section{
+    width: 50%;
+    height: %;
     background-color: white;
     padding-bottom: 1em;
     margin-top: 0.5em;
@@ -268,7 +313,23 @@ header[id ="login_header"]{
   td:nth-of-type(10):before { content: "Date(mm/dd)"; }
 
 
+@media only screen and (max-width: 480px){
+
+   #login_section{
+    width: 75%;
+    height: 100%;
+    background-color: white;
+    margin-top: 0.5em;
+    margin-left: -1em;
+    padding: 2.5em;
+  }
+    #login_form{
+      width: 100%;
 }
 }
+
+/* ===== STATE STYLES ===== */
+=======
+
 
 /* ===== STATE STYLES ===== */
