@@ -33,13 +33,13 @@
         document.getElementById("txt").innerHTML = "";
       var checkBoxes = document.getElementsByName("box");
       for(var i=0; i < checkBoxes.length;i++)
-      { 
+      {
           if(checkBoxes[i].checked)
           {           document.getElementById("txt").innerHTML += document.getElementById("lbl_" + checkBoxes[i].id).innerHTML
           }
       }
-    
-    } 
+
+    }
   </script>
 <h1> SELECT YOUR CLASS</h1>
 <!--Adding drop down list in floating panel
@@ -127,16 +127,16 @@
     </tr>
     <tr>
     	<td><label id="lbl_1"></label><input type="checkbox" name="box"  id="2" onchange="calculate()">&nbsp;</td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	<td>-</td>
+    	<td>-</td>
+    	<td>-</td>
+    	<td>-</td>
+    	<td>-</td>
     	<td>R</td>
     	<td>10:30am-12:20am</td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	<td>-</td>
+    	<td>-</td>
+    	<td>-</td>
     	<td>James R. Dabbert (P)</td>
     	<td>05/04-05/04</td>
     	<td>RE 121</td>
@@ -161,16 +161,16 @@
 
     <tr>
     	<td><input type="checkbox" name="name1" id="4" onchange="calculate()" />&nbsp;</td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	<td>-</td>
+    	<td>-</td>
+    	<td>-</td>
+    	<td>-</td>
+    	<td>-</td>
     	<td>R</td>
     	<td>02:00pm-04:00pm</td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	<td>-</td>
+    	<td>-</td>
+    	<td>-</td>
     	<td>James R. Dabbert (P)</td>
     	<td>05/04-05/04</td>
     	<td>RE 121</td>
@@ -178,13 +178,8 @@
     </table>
 
   <button type="submit" value="./dropClass.html">Submit</button>
-  
+
 <h1>|Add These Classes:        |
 <span id="txt"></span>
-
-
-
-
-
 </body>
 </html>
