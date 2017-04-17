@@ -7,3 +7,15 @@ jQuery(function($) {
   $('html').addClass('hasjs');
 });
 
+
+
+$('#login').on('submit', function(e){
+if (user === '' || password === '') {
+  alert('This field cannot be left blank!');
+  //when working send the user to the landing.html page
+  window.location.replace('landing.html');
+}else{ 
+	console.log('bad username or password');
+
+	}
+});  
