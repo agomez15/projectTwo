@@ -23,14 +23,101 @@
     } 
   </script>
   <script src="../js/selectClass.js"></script>
-<form id="dropClasses">
-    <label id="lbl_1">AAH 223 Art and Architectural History</label><input type="checkbox" name="box" id="1" onchange="calculate()">
-        <label id="lbl_2">Math 151 Calculus 1</label><input id="2" type="checkbox" name="box" onchange="calculate()">
-       <label id="lbl_3">Biology 117 Human Biology</label><input type="checkbox" name="box" id="3" onchange="calculate()">
+<form id="extras" hidden>
+    <label id="lbl_1">|20999 TR 20th Century American Art and Culture|       </label>
+        <label id="lbl_2">|20999 R 20th Century American Art and Culture|      </label>
+        <label id="lbl_3">|25553 TR 20th Century American Art and Culture|        </label>
 </form>
-<p>Drop These Classes</p>
-        <span id="txt"></span></&nsbp>
-        <button type="submit" value="./selectClass">Submit</button>
+
+ <table>
+    <tr>
+      <th>Select</th>
+      <th>CRN</th>
+      <th>Subj</th>
+    	<th>Cmp</th>
+    	<th>Cred</th>
+    	<th>Title</th>
+    	<th>Day</th>
+    	<th>Time</th>
+    	<th>Cap</th>
+    	<th>Act</th>
+    	<th>WLACT</th>
+    	<th>Instructor</th>
+    	<th>Date(MM/DD)</th>
+    	<th>Location</th>
+    </tr>
+    <tr>
+    	<td><label id="lbl_1"></label><input type="checkbox" name="box"  id="1" onchange="calculate()">&nbsp;</td>
+    	<td>20999</td>
+    	<td>AAH</td>
+    	<td>MC</td>
+    	<td>3.0</td>
+    	<td>20th Century American Art and Culture</td>
+    	<td>TR</td>
+    	<td>10:00am-11:15am</td>
+    	<td>23</td>
+    	<td>22</td>
+    	<td>0</td>
+    	<td>James R. Dabbert (P)</td>
+    	<td>01/09-04/29</td>
+    	<td>RE 121</td>
+    </tr>
+    <tr>
+    	<td><label id="lbl_1"></label><input type="checkbox" name="box"  id="2" onchange="calculate()">&nbsp;</td>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td>R</td>
+    	<td>10:30am-12:20am</td>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td>James R. Dabbert (P)</td>
+    	<td>05/04-05/04</td>
+    	<td>RE 121</td>
+    </tr>
+
+    <tr>
+    	<td><label id="lbl_3"></label><input type="checkbox" name="box"  id="3" onchange="calculate()">&nbsp;</td>
+    	<td>25553</td>
+    	<td>AAH</td>
+    	<td>MC</td>
+    	<td>3.0</td>
+    	<td>20th Century American Art and Culture</td>
+    	<td>TR</td>
+    	<td>11:25am-12:40pm</td>
+    	<td>23</td>
+    	<td>23</td>
+    	<td>0</td>
+    	<td>James R. Dabbert (P)</td>
+    	<td>01/09-04/29</td>
+    	<td>RE 121</td>
+    </tr>
+
+    <tr>
+    	<td><input type="checkbox" name="name1" id="4" onchange="calculate()" />&nbsp;</td>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td>R</td>
+    	<td>02:00pm-04:00pm</td>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td>James R. Dabbert (P)</td>
+    	<td>05/04-05/04</td>
+    	<td>RE 121</td>
+    </tr>
+    </table>
+
+  <button type="submit" value="./dropClass.html">Submit</button>
+  
+<h1>|Drop These Classes:        |
+<span id="txt"></span>
 
 </body>
 </html>

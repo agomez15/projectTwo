@@ -28,8 +28,19 @@
     </nav>
   </header>
 <body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="js/site.js"></script>
+  <script> function calculate()
+    {
+        document.getElementById("txt").innerHTML = "";
+      var checkBoxes = document.getElementsByName("box");
+      for(var i=0; i < checkBoxes.length;i++)
+      { 
+          if(checkBoxes[i].checked)
+          {           document.getElementById("txt").innerHTML += document.getElementById("lbl_" + checkBoxes[i].id).innerHTML
+          }
+      }
+    
+    } 
+  </script>
 <h1> SELECT YOUR CLASS</h1>
 <!--Adding drop down list in floating panel
 <div id="floating-panel">
@@ -75,7 +86,11 @@
 <div class="biomed box">Biomedical Engineering MATLAB 211</div>
 <div class="eco box">Macro Economics 302</div>
 <div class="bus box">Business for Entrepeneurs 411</div>
---> 
+--> <form id="extras" hidden>
+    <label id="lbl_1">|20999 TR 20th Century American Art and Culture|       </label>
+        <label id="lbl_2">|20999 R 20th Century American Art and Culture|      </label>
+        <label id="lbl_3">|25553 TR 20th Century American Art and Culture|        </label>
+</form>
 
  <table>
     <tr>
@@ -95,7 +110,7 @@
     	<th>Location</th>
     </tr>
     <tr>
-    	<td><label id="lbl_1"></label><input type="checkbox" name="box"  id="1" onchange="select()">&nbsp;</td>
+    	<td><label id="lbl_1"></label><input type="checkbox" name="box"  id="1" onchange="calculate()">&nbsp;</td>
     	<td>20999</td>
     	<td>AAH</td>
     	<td>MC</td>
@@ -111,7 +126,7 @@
     	<td>RE 121</td>
     </tr>
     <tr>
-    	<td><label id="lbl_2"></label><input type="checkbox" name="box"  id="2" onchange="select()">&nbsp;</td>
+    	<td><label id="lbl_1"></label><input type="checkbox" name="box"  id="2" onchange="calculate()">&nbsp;</td>
     	<td></td>
     	<td></td>
     	<td></td>
@@ -128,7 +143,7 @@
     </tr>
 
     <tr>
-    	<td><label id="lbl_3"></label><input type="checkbox" name="box"  id="3" onchange="select()">&nbsp;</td>
+    	<td><label id="lbl_3"></label><input type="checkbox" name="box"  id="3" onchange="calculate()">&nbsp;</td>
     	<td>25553</td>
     	<td>AAH</td>
     	<td>MC</td>
@@ -145,7 +160,7 @@
     </tr>
 
     <tr>
-    	<td><input type="checkbox" name="name1" id="4" onchange="select()" />&nbsp;</td>
+    	<td><input type="checkbox" name="name1" id="4" onchange="calculate()" />&nbsp;</td>
     	<td></td>
     	<td></td>
     	<td></td>
@@ -161,9 +176,10 @@
     	<td>RE 121</td>
     </tr>
     </table>
-  <button type="submit" value="Submit">Submit</button>
-  
 
+  <button type="submit" value="./dropClass.html">Submit</button>
+  
+<h1>|Add These Classes:        |
 <span id="txt"></span>
 
 
