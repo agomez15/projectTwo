@@ -56,3 +56,18 @@ if (user === '' || password === '') {
 
 	}
 });  
+
+
+
+function calculate()
+    {
+        document.getElementById("txt").innerHTML = "";
+      var checkBoxes = document.getElementsByName("box");
+      for(var i=0; i < checkBoxes.length;i++)
+      { 
+          if(checkBoxes[i].checked)
+          {           document.getElementById("txt").innerHTML += document.getElementById("lbl_" + checkBoxes[i].id).innerHTML
+          }
+      }
+    
+    }
