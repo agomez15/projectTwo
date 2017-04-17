@@ -98,9 +98,8 @@ label{
 
 }
 
-section [id = "login"]{
-background-color: orange;
-margin: 5em;
+#login_section{
+margin-top: 5em;
 border: solid thin;
 border-spacing: 2em;
 padding: 3.5em;
@@ -108,11 +107,8 @@ border-radius: 1%;
 background-color: white;
 }
 
-form{
 
-}
-
-section [id = "login_picture"]{
+#login_picture{
 	margin-left: 20em;
 	margin-top: 8em;
 	width: 50%;
@@ -133,6 +129,7 @@ background-color: transparent;
   width: 20%;
   border: thin;
 }
+
 /* ===== LAYOUT STYLES ===== */
 table {
     font-family: arial, sans-serif;
@@ -177,7 +174,7 @@ header[id="degree-works"] {
   
 }
 
-header[id ="login"]{
+header[id ="login_header"]{
  background-color: #B00603;
  border-bottom: 1em solid;
  border-bottom-color: white;
@@ -189,14 +186,35 @@ header[id ="login"]{
 
 
 /* ===== MODULAR STYLES ===== */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+@media only screen and (max-device-width : 800px) and (max-device-width : 480px){
+  
+
   #login_picture {
     display: none;
     
   }
 
-  
+  #login_section{
+    width: 100%;
+    height:25%;
+    background-color: white;
+    padding-bottom: 1em;
+    margin-top: 0.5em;
+  }
 
+  #login_header{
+  }
+}
+
+@media only screen  and (min-width : 1224px){
+  #login_section{
+    width: 25%;
+  }
+  #login_picture{
+    float: right;
+    margin-top: -12em;
+    border-radius: 1%;
+  }
 }
 
 /* ===== STATE STYLES ===== */
