@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="nojs">
+<head>
+  <title>IIT Drop Classes Page</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+  <link rel="stylesheet" media="screen" href="../css/screen.css" />
+  <link rel="stylesheet" media="screen" href="../css/_normalize-form.css" />
+  </head>
+  <script> function calculate()
+    {
+        document.getElementById("txt").innerHTML = "";
+      var checkBoxes = document.getElementsByName("box");
+      for(var i=0; i < checkBoxes.length;i++)
+      { 
+          if(checkBoxes[i].checked)
+          {           document.getElementById("txt").innerHTML += document.getElementById("lbl_" + checkBoxes[i].id).innerHTML
+          }
+      }
+    
+    } 
+  </script>
+  <script src="../js/selectClass.js"></script>
+<form id="dropClasses">
+    <label id="lbl_1">AAH 223 Art and Architectural History</label><input type="checkbox" name="box" id="1" onchange="calculate()">
+        <label id="lbl_2">Math 151 Calculus 1</label><input id="2" type="checkbox" name="box" onchange="calculate()">
+       <label id="lbl_3">Biology 117 Human Biology</label><input type="checkbox" name="box" id="3" onchange="calculate()">
+</form>
+<p>Drop These Classes</p>
+        <span id="txt"></span></&nsbp>
+        <button type="submit" value="./selectClass">Submit</button>
+
+</body>
+</html>
