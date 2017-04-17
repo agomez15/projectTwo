@@ -100,10 +100,10 @@ label{
 
 section [id = "login"]{
 background-color: orange;
-margin: 5em;
+margin: 5em; /*remove this*/
 border: solid thin;
 border-spacing: 2em;
-padding: 3.5em;
+padding: 3.5em; /*remove this */
 border-radius: 1%;
 background-color: white;
 }
