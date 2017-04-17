@@ -183,102 +183,92 @@ header[id ="login_header"]{
  margin-left: -1em;
  margin-right: -1em;
  margin-top: -1em;
- font-family: 'Roboto Slab', serif;
 }
 
 
 /* ===== MODULAR STYLES ===== */
-@media only screen and (min-width: 900px){
-  #login_section{
-    width: 25%;
-
-  }
-}
-
 @media only screen and (max-device-width : 800px) and (max-device-width : 480px){
 
 
   #login_picture {
     display: none;
-  }
-  #login_form{
-    width: 100%;
-    margin-right: -2em;
-  }
-  #login_picture{
-    float: right;
-    margin-top:-12em;
-    border-radius: 1%;
-  }
-}
 
-@media only screen and (max-width: 800px){
+  }
+
   #login_section{
-    width: 50%;
+    width: 100%;
     height:25%;
     background-color: white;
     padding-bottom: 1em;
-    margin: 1 auto;
-  }
-
-  input{
-    margin-left: -2em;
-    width: 100%;
-  }
-
-#login_picture {
-    display: none;
-    
-  }
-
-}
-
-@media only screen and (min-width: 360px) and (max-width: 640px){
-  
-   #login_section{
-    width: 50%;
-    height: %;
-    background-color: white;
-    padding-bottom: 1em;
     margin-top: 0.5em;
-    margin-left: 3em;
-
   }
 
-  input{
-    margin-left: -2em;
-    width: 100%;
-  }
-
-#login_picture {
-    display: none;
-    
+  #login_header{
   }
 }
 
-@media only screen and (max-width: 480px){
-
-   section{
-   margin:0 auto;  
-   padding: 0;
-   width: 100%;
+@media only screen  and (min-width : 1224px){
+  #login_section{
+    width: 25%;
   }
-
-    input{
-      width: 100%
-    }
-
-    #login_form{
-      position: absolute;
-      top: 50%;
-      left: 50
-      width: 100%;
-
-    }
-  
-  #login_picture {
-    display: none;
-    
+  #login_picture{
+    float: right;
+    margin-top: -12em;
+    border-radius: 1%;
   }
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px)  {
+  /* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	tr { border: 1px solid #ccc; }
+
+	td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+	}
+
+	td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Select"; }
+	td:nth-of-type(2):before { content: "CRN"; }
+	td:nth-of-type(3):before { content: "Subj"; }
+	td:nth-of-type(4):before { content: "Cmp"; }
+	td:nth-of-type(5):before { content: "Cred"; }
+	td:nth-of-type(6):before { content: "Title"; }
+	td:nth-of-type(7):before { content: "Day"; }
+	td:nth-of-type(8):before { content: "Time"; }
+	td:nth-of-type(9):before { content: "Act"; }
+	td:nth-of-type(10):before { content: "WLACT"; }
+  td:nth-of-type(10):before { content: "Instructor"; }
+  td:nth-of-type(10):before { content: "Date(mm/dd)"; }
+
+
 }
+}
+
 /* ===== STATE STYLES ===== */
