@@ -233,7 +233,9 @@ th {
 header[id="welcome"] {
 
   display: box;
-  font-family:;
+  background-color: none;
+  border-bottom: 0.125em solid;
+  border-bottom-color:black;
 
 }
 
@@ -253,8 +255,10 @@ header[id="degree-works"] {
 header {
   
   display: box-border;
-  background-color: #dc143c;
-  
+  background-color: none;
+  border-top: none;
+  margin-top: 0.5em;
+   
 }
 
 a {
