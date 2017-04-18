@@ -23,8 +23,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
   text-align: center;
 
-  color: #ffffff;
-  background-color: #E9E9E9;
+  color: #000000;
+  background-color: #B00603;
 
 }
 
@@ -50,8 +50,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .navbar .nav.active a {
 
 
-  background-color: #f0ffff;
-  color: #0000ff;
+  background-color: #000000;
+  color: #F7F1F3;
 
 }
 
@@ -61,20 +61,12 @@ html {
 	font-size: 1.375em; /* 22px */
 	line-height: 1.182em; /* 22px based on 22px font size value */
   padding: 1.182em; /* 26px / ~ 120%  */
-  font-family: sans-serif, serif;
+  font-family: 'Oswald', sans-serif;
   text-rendering: optimizeLegibility;
 
   min-width: 3.5em;
   background-color:#dbdbdb;
-<<<<<<< HEAD
-  color: red;
-  
-=======
-  color: white;
->>>>>>> c4cadfb10fae7a8be456ed4b21b292e8a7777cdd
-
-
-
+  color: black;
 }
 
 /* Responsive Media */
@@ -162,6 +154,7 @@ th {
 header[id="welcome"] {
 
   display: box;
+  font-family:;
 
 }
 
@@ -169,13 +162,13 @@ header[id="academics"] {
 
 
   display: box-border;
-  background-color: #dc143c;
+  background-color: #E1B053;
 
 }
 header[id="degree-works"] {
 
   display: box-border;
-  background-color: #dc143c;
+  background-color: #E1B053;
 
 }
 
@@ -187,6 +180,8 @@ header[id ="login_header"]{
  margin-left: -1em;
  margin-right: -1em;
  margin-top: -1em;
+ font-family: 'EK Mukta', sans-serif;
+ font-size: larger;
 }
 
 
@@ -197,7 +192,10 @@ header[id ="login_header"]{
 
   }
   input{
-    
+    margin-left: -1em;
+    width: 100%;
+    font-family: inherit;
+    font-size: smaller;
   }
   #login_form{
     width: 100%;
@@ -223,6 +221,8 @@ header[id ="login_header"]{
   input{
     margin-left: -1em;
     width: 100%;
+    font-family: inherit;
+    font-size: smaller;
   }
 
 #login_picture {
@@ -236,7 +236,7 @@ header[id ="login_header"]{
   
    #login_section{
     width: 50%;
-    height: %;
+    height: 100%;
     background-color: white;
     padding-bottom: 1em;
     margin-top: 0.5em;
@@ -246,7 +246,8 @@ header[id ="login_header"]{
 
   input{
     margin-left: -2em;
-    width: 100%;
+    font-family: inherit;
+    font-size: smaller;
   }
 
 #login_picture {
@@ -269,62 +270,15 @@ header[id ="login_header"]{
       width: 100%;
 
     }
+    input{
+      font-family: inherit;
+      font-size: smaller;
+    }
   
   #login_picture {
     display: none;
     
   }
 }
-@media only screen and (max-width: 760px),
-  (min-device-width: 768px) and (max-device-width: 1024px)  {
-  /* Force table to not be like tables anymore */
-  table, thead, tbody, th, td, tr {
-    display: block;
-  }
-
-  /* Hide table headers (but not display: none;, for accessibility) */
-  thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-
-  tr { border: 1px solid #ccc; }
-
-  td {
-    /* Behave  like a "row" */
-    border: none;
-    border-bottom: 1px solid #eee;
-    position: relative;
-    padding-left: 50%;
-  }
-
-  td:before {
-    /* Now like a table header */
-    position: absolute;
-    /* Top/left values mimic padding */
-    top: 6px;
-    left: 6px;
-    width: 45%;
-    padding-right: 10px;
-    white-space: nowrap;
-  }
-
-  /*
-  Label the data
-  */
-  td:nth-of-type(1):before { content: "Select"; }
-  td:nth-of-type(2):before { content: "CRN"; }
-  td:nth-of-type(3):before { content: "Subj"; }
-  td:nth-of-type(4):before { content: "Cmp"; }
-  td:nth-of-type(5):before { content: "Cred"; }
-  td:nth-of-type(6):before { content: "Title"; }
-  td:nth-of-type(7):before { content: "Day"; }
-  td:nth-of-type(8):before { content: "Time"; }
-  td:nth-of-type(9):before { content: "Act"; }
-  td:nth-of-type(10):before { content: "WLACT"; }
-  td:nth-of-type(10):before { content: "Instructor"; }
-  td:nth-of-type(10):before { content: "Date(mm/dd)"; }
-
 
 /* ===== STATE STYLES ===== */
