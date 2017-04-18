@@ -228,6 +228,7 @@ th {
 header[id="welcome"] {
 
   display: box;
+<<<<<<< HEAD
 
   background-color: #E1B053; 
   padding: .5em;
@@ -235,6 +236,8 @@ header[id="welcome"] {
   background-color: none;
   border-bottom: 0.125em solid;
   border-bottom-color:black;
+=======
+>>>>>>> e8dc1bede35a8d7a1a4db230e574b4d64d12d715
 
 }
 
@@ -246,13 +249,20 @@ header {
 
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e8dc1bede35a8d7a1a4db230e574b4d64d12d715
 header[id="degree-works"] {
 
   display: box-border;
   background-color: #E1B053;
 
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> e8dc1bede35a8d7a1a4db230e574b4d64d12d715
 
 a {
  
