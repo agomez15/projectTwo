@@ -33,11 +33,6 @@ img, audio, video {
   max-width: 100%;
 }
 
-h3[id="student-name"]{
-
-  padding-top: 1.0em;
-
-}
 
 p {
 
@@ -56,18 +51,18 @@ label{
 
 
 section [id = "login"]{
-background-color: orange;
-margin: 5em; /*remove this*/
+  background-color: orange;
+  margin: 5em; /*remove this*/
 }
 
 #login_section{
-margin-top: 5em;
+  margin-top: 5em;
 
-border: solid thin;
-border-spacing: 2em;
-padding: 3.5em; /*remove this */
-border-radius: 1%;
-background-color: white;
+  border: solid thin;
+  border-spacing: 2em;
+  padding: 3.5em; /*remove this */
+  border-radius: 1%;
+  background-color: white;
 }
 
 
@@ -79,13 +74,13 @@ background-color: white;
 }
 
 input{
-height: 3em;
-width: 75%;
-margin-left: 3em;
-border-style: none;
-border-bottom: solid thin;
-margin-bottom: 1.5em;
-background-color: transparent;
+  height: 3em;
+  width: 75%;
+  margin-left: 3em;
+  border-style: none;
+  border-bottom: solid thin;
+  margin-bottom: 1.5em;
+  background-color: transparent;
 }
 
 #submit{
@@ -233,32 +228,29 @@ th {
 header[id="welcome"] {
 
   display: box;
+
+  background-color: #E1B053; 
+  padding: .5em;
+
   background-color: none;
   border-bottom: 0.125em solid;
   border-bottom-color:black;
 
 }
 
-header[id="academics"] {
+header {
 
 
   display: box-border;
   background-color: #E1B053;
 
 }
+
 header[id="degree-works"] {
 
   display: box-border;
   background-color: #E1B053;
 
-}
-header {
-  
-  display: box-border;
-  background-color: none;
-  border-top: none;
-  margin-top: 0.5em;
-   
 }
 
 a {
@@ -278,7 +270,6 @@ header[id ="login_header"]{
  color: white;
  font-size: 36px
 }
-
 
 /* ===== MODULAR STYLES ===== */
 @media only screen and (min-width: 900px){
@@ -417,14 +408,19 @@ header[id ="login_header"]{
 
 /* ======= MEDIA QUERIES ====== */
 
-@media screen and (min-width: 50em){
+@media screen and (min-width: 55em) {
   
   .navbar {
     display: flex;
     /* display: none!important; */
     
   }  
+  .navbar-collapse{
+      width: auto;
+    }
 }
+
+
   /*
   Label the data
   */
