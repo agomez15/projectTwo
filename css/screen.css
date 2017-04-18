@@ -18,9 +18,9 @@ html {
 	font-size: 1.375em; /* 22px */
 	line-height: 1.182em; /* 22px based on 22px font size value */
   padding: 1.182em; /* 26px / ~ 120%  */
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Ek Mukta', sans-serif;
   text-rendering: optimizeLegibility;
-
+  font-weight: bold;
   min-width: 3.5em;
   background-color:#dbdbdb;
 
@@ -42,6 +42,7 @@ h3[id="student-name"]{
 p {
 
   padding: .5em;
+  font-family: 'Roboto', sans-serif;
 
 }
 
@@ -89,7 +90,7 @@ background-color: transparent;
 
 #submit{
   width: 20%;
-  border: thin;
+  border-style: thin;
 }
 
 
@@ -101,23 +102,28 @@ background-color: transparent;
 
 /* ===== LAYOUT STYLES ===== */
 table {
-    font-family: arial, sans-serif;
+    font-family: 'Ek Mukta', sans-serif;
     border-collapse: collapse;
     width: 100%;
+
 }
 
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+    font-family: 'Roboto', sans-serif;
 }
 
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+
 th {
     background-color: black;
     color: white;
+    font-family: 'EK Mukta', sans-serif;
+    font-weight: bold;
 }
 /* Popup container - can be anything you want */
 .popup {
@@ -227,7 +233,9 @@ th {
 header[id="welcome"] {
 
   display: box;
-  font-family:;
+  background-color: none;
+  border-bottom: 0.125em solid;
+  border-bottom-color:black;
 
 }
 
@@ -247,8 +255,10 @@ header[id="degree-works"] {
 header {
   
   display: box-border;
-  background-color: #dc143c;
-  
+  background-color: none;
+  border-top: none;
+  margin-top: 0.5em;
+   
 }
 
 a {
@@ -261,12 +271,12 @@ header[id ="login_header"]{
  background-color: #B00603;
  border-bottom: 1em solid;
  border-bottom-color: white;
- padding-bottom: 1em;
  margin-left: -1em;
  margin-right: -1em;
  margin-top: -1em;
- font-family: 'EK Mukta', sans-serif;
- font-size: larger;
+ font-family: 'Roboto', sans-serif;
+ color: white;
+ font-size: 36px
 }
 
 
