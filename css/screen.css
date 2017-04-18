@@ -67,7 +67,8 @@ html {
   min-width: 3.5em;
   background-color:#dbdbdb;
 
-  color: black;}
+  color: black;
+}
 
 /* Responsive Media */
 img, audio, video {
@@ -84,6 +85,7 @@ h3[id="student-name"]{
 p {
 
   padding: .5em;
+  font-family: 'Lato', sans-serif;
 
 }
 
@@ -124,28 +126,34 @@ background-color: transparent;
 
 #submit{
   width: 20%;
-  border: thin;
+  border-style: thin;
 }
 
 /* ===== LAYOUT STYLES ===== */
 table {
-    font-family: arial, sans-serif;
+    font-family: 'Ek Mukta', sans-serif;
     border-collapse: collapse;
     width: 100%;
+
 }
 
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+
 th {
     background-color: black;
     color: white;
+    font-family: 'EK Mukta', sans-serif;
+    font-weight: bold;
 }
 /* Popup container - can be anything you want */
 .popup {
