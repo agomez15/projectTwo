@@ -10,50 +10,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* =========  ACROSS ALL PAGES ======== */
 
 
-/* ======== NAV STYLES ======= */
 
-.navbar {
-  min-width: 100%;
-  margin: 0;
-  padding: 0;
-
-  box-sizing: border-box;
-
-  list-style-type: none;
-
-  text-align: center;
-
-  color: #000000;
-  background-color: #B00603;
-
-}
-
-.navbar .nav {
-
-
-  text-decoration: none;
-  font-weight: bold;
-
-}
-
-.navbar .nav a {
-
-  display: block;
-  text-decoration: none;
-  padding: .5em;
-
-
-}
-
-.navbar .nav a:hover,
-.navbar .nav a:active,
-.navbar .nav.active a {
-
-
-  background-color: #000000;
-  color: #F7F1F3;
-
-}
 
 /* ===== BASE STYLES ===== */
 
@@ -97,11 +54,18 @@ label{
 
 }
 
+
+section [id = "login"]{
+background-color: orange;
+margin: 5em; /*remove this*/
+}
+
 #login_section{
 margin-top: 5em;
+
 border: solid thin;
 border-spacing: 2em;
-padding: 3.5em;
+padding: 3.5em; /*remove this */
 border-radius: 1%;
 background-color: white;
 }
@@ -128,6 +92,13 @@ background-color: transparent;
   width: 20%;
   border-style: thin;
 }
+
+
+/* ===== Academics Sytles ====== */
+
+
+
+
 
 /* ===== LAYOUT STYLES ===== */
 table {
@@ -211,6 +182,51 @@ th {
     to {opacity:1 ;}
 }
 
+/* ======== NAV STYLES ======= */
+
+.navbar {
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  list-style-type: none;
+
+  text-align: center;
+
+  color: #000000;
+  background-color: #B00603;
+
+}
+
+.navbar .nav {
+
+
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+.navbar .nav a {
+
+  display: block;
+  text-decoration: none;
+  padding: .5em;
+
+
+}
+
+.navbar .nav a:hover,
+.navbar .nav a:active,
+.navbar .nav.active a {
+
+
+  background-color: #000000;
+  color: #F7F1F3;
+
+}
+
 
 /* ====== Headers ======== */
 
@@ -233,6 +249,18 @@ header[id="degree-works"] {
   display: box-border;
   background-color: #E1B053;
 
+}
+header {
+  
+  display: box-border;
+  background-color: #dc143c;
+  
+}
+
+a {
+ 
+  text-decoration: none;
+  
 }
 
 header[id ="login_header"]{
@@ -379,6 +407,20 @@ header[id ="login_header"]{
     white-space: nowrap;
   }
 
+
+/* ===== STATE STYLES ===== */
+
+
+/* ======= MEDIA QUERIES ====== */
+
+@media screen and (min-width: 50em){
+  
+  .navbar {
+    display: flex;
+    /* display: none!important; */
+    
+  }  
+}
   /*
   Label the data
   */
@@ -397,4 +439,3 @@ header[id ="login_header"]{
   td:nth-of-type(13):before { content: "Date(mm/dd)"; }
   td:nth-of-type(14):before { content: "Location"; }
 
-/* ===== STATE STYLES ===== */
