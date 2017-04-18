@@ -85,7 +85,7 @@ input{
 
 #submit{
   width: 20%;
-  border-style: thin;
+  border-style: none;
 }
 
 
@@ -128,7 +128,7 @@ th {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+    -user-select: none;
     color: #f71621;
 }
 
@@ -223,7 +223,7 @@ th {
 }
 
 
-/* ====== Headers ======== */
+/* ====== Headers/Footers ======== */
 
 header[id="welcome"] {
 
@@ -231,15 +231,12 @@ header[id="welcome"] {
 
   background-color: #E1B053; 
   padding: .5em;
-
-  background-color: none;
   border-bottom: 0.125em solid;
-  border-bottom-color:black;
+  border-bottom-color: black;
 
 }
 
 header {
-
 
   display: box-border;
   background-color: #E1B053;
@@ -252,6 +249,15 @@ header[id="degree-works"] {
   background-color: #E1B053;
 
 }
+
+aside[id="links"] {
+  
+  display: box-border;
+  text-align: center;
+  padding: 2em;
+  background-color: #B00603;
+  
+} 
 
 a {
  
@@ -367,7 +373,7 @@ header[id ="login_header"]{
   }
 }
 
-@media only screen and (max-width: 760px),
+@media only screen and (max-width: 30em),
   (min-device-width: 768px) and (max-device-width: 1024px)  {
   /* Force table to not be like tables anymore */
   table, thead, tbody, th, td, tr {
@@ -419,6 +425,7 @@ header[id ="login_header"]{
       width: auto;
     }
 }
+
 
 
   /*
