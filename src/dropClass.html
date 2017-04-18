@@ -4,12 +4,15 @@
   <title>IIT Drop Classes Page</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Ek+Mukta:200|Lora|Muli:300|Oswald:300|Roboto+Slab:300" rel="stylesheet">  
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
   <link rel="stylesheet" media="screen" href="../css/screen.css" />
   <link rel="stylesheet" media="screen" href="../css/_normalize-form.css" />
   </head>
-  <script> function calculate()
+  <script> 
+ function calculate()
     {
         document.getElementById("txt").innerHTML = "";
       var checkBoxes = document.getElementsByName("box");
@@ -20,17 +23,135 @@
           }
       }
     
-    } 
+    }
   </script>
+<header>
+    <nav id="main-nav">
+      <ul id="nav" class="navbar">
+        <li class="nav active"><a href="landing.html">Welcome</a></li>
+        <li class="nav"><a href="./academics.html">Academics</a></li>
+        <li class="nav"><a href="#">Finances</a></li>
+        <li class="nav"><a href="https://blackboard.iit.edu/">Blackboard</a></li>
+        <li class="nav"><a href="http://web.iit.edu/campus-life">Student Life</a></li>
+        <li class="nav"><a href="#">Research</a></li>
+        <li class="nav"><a href="http://www.illinoistechathletics.com/landing/index">Athletics</a></li>
+        <li class="nav"><a href="my-account.html">My Stuff</a></li>
+        <li class="nav"><a href="./index.html">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
   <script src="../js/selectClass.js"></script>
-<form id="dropClasses">
-    <label id="lbl_1">AAH 223 Art and Architectural History</label><input type="checkbox" name="box" id="1" onchange="calculate()">
-        <label id="lbl_2">Math 151 Calculus 1</label><input id="2" type="checkbox" name="box" onchange="calculate()">
-       <label id="lbl_3">Biology 117 Human Biology</label><input type="checkbox" name="box" id="3" onchange="calculate()">
-</form>
-<p>Drop These Classes</p>
-        <span id="txt"></span></&nsbp>
-        <button type="submit" value="./selectClass">Submit</button>
+  <form id="extras" hidden>
+    	<label id="lbl_1">|21999 TR Calculus One|       </label>
+        <label id="lbl_2">|21586 R Calculus 2|      </label>
+        <label id="lbl_3">|34567 TR Biology|        </label>
+	<label id="lbl_4">|17777 TR Architecture Designs of the 1800|        </label>
+  </form>
+<h1> Drop Class Page</h1>
+ <table>
+    <tr>
+      <th>Select</th>
+      <th>CRN</th>
+      <th>Subj</th>
+    	<th>Cmp</th>
+    	<th>Cred</th>
+    	<th>Title</th>
+    	<th>Day</th>
+    	<th>Time</th>
+    	<th>Cap</th>
+    	<th>Act</th>
+    	<th>WLACT</th>
+    	<th>Instructor</th>
+    	<th>Date(MM/DD)</th>
+    	<th>Location</th>
+    </tr>
+    <tr>
+    	<td><label id="lbl_1"></label><input type="checkbox" name="box"  id="1" onchange="calculate()">&nbsp;</td>
+    	<td>21999</td>
+    	<td>MATH</td>
+    	<td>MC</td>
+    	<td>5.0</td>
+    	<td>Calculus 1</td>
+    	<td>TR</td>
+    	<td>10:00am-11:15am</td>
+    	<td>33</td>
+    	<td>22</td>
+    	<td>10</td>
+    	<td>James W. Fitzgerald(P)</td>
+    	<td>01/09-04/29</td>
+    	<td>LS 121</td>
+    </tr>
+    <tr>
+    	<td><label id="lbl_1"></label><input type="checkbox" name="box"  id="2" onchange="calculate()">&nbsp;</td>
+    	<td>21586</td>
+    	<td>MATH</td>
+    	<td>MC</td>
+    	<td>5.0</td>
+    	<td>Calculus 2</td>
+    	<td>TR</td>
+    	<td>10:00am-11:15am</td>
+    	<td>33</td>
+    	<td>22</td>
+    	<td>10</td>
+    	<td>James M. Fitzgerald(P)</td>
+    	<td>01/09-04/29</td>
+    	<td>LS 121</td>
+    </tr>
+
+    <tr>
+    	<td><label id="lbl_3"></label><input type="checkbox" name="box"  id="3" onchange="calculate()">&nbsp;</td>
+    	<td>34567</td>
+    	<td>BIOL</td>
+    	<td>MC</td>
+    	<td>2.0</td>
+    	<td>Biology</td>
+    	<td>TR</td>
+    	<td>11:25am-12:40pm</td>
+    	<td>23</td>
+    	<td>23</td>
+    	<td>0</td>
+    	<td>Karl R. Rodney (P)</td>
+    	<td>01/09-04/29</td>
+    	<td>WH 121</td>
+    </tr>
+
+    <tr>
+    	<td><input type="checkbox" name="name1" id="4" onchange="calculate()" />&nbsp;</td>
+    	<td>17777</td>
+    	<td>ARCH</td>
+    	<td>MC</td>
+    	<td>4.0</td>
+    	<td>Architecture Designs of 1800</td>
+    	<td>TR</td>
+    	<td>11:25am-12:40pm</td>
+    	<td>44</td>
+    	<td>42</td>
+    	<td>2</td>
+    	<td>Jimmy R. Rodney (P)</td>
+    	<td>01/09-04/29</td>
+    	<td>SH 123</td>
+    </tr>
+    </table>
+
+
+  <script>function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}</script>
+
+  <div class="popup" onclick="myFunction()">Click Here To Drop Your Classes
+  <span class="popuptext" id="myPopup">Your classes have been dropped!</span>
+  </div>
+
+  <h1>Drop These Classes:        |</h1>
+  <span id="txt"></span>
+
+
+      <form action="./selectClass.html" > 
+      <button type="submit">Add Classes</button>
+    </form> 
+  
+
 
 </body>
 </html>
