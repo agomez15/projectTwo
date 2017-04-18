@@ -4,27 +4,16 @@
   <title>IIT Drop Classes Page</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+<<<<<<< HEAD
   <link href="https://fonts.googleapis.com/css?family=EB+Garamond%7CEk+Mukta:200%7CLora%7CMuli:300%7COswald:300%7CRoboto+Slab:300" rel="stylesheet"> 	
+=======
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Ek+Mukta:200|Lora|Muli:300|Oswald:300|Roboto+Slab:300" rel="stylesheet">
+>>>>>>> a9dcd78b0ca029c829d905a378c54b180f85ca68
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
   <link rel="stylesheet" media="screen" href="../css/screen.css" />
   <link rel="stylesheet" media="screen" href="../css/_normalize-form.css" />
   </head>
-  <script> 
- function calculate()
-    {
-        document.getElementById("txt").innerHTML = "";
-      var checkBoxes = document.getElementsByName("box");
-      for(var i=0; i < checkBoxes.length;i++)
-      { 
-          if(checkBoxes[i].checked)
-          {           document.getElementById("txt").innerHTML += document.getElementById("lbl_" + checkBoxes[i].id).innerHTML
-          }
-      }
-    
-    }
-  </script>
+
 <header>
     <nav id="main-nav">
       <ul id="nav" class="navbar">
@@ -37,6 +26,21 @@
       </ul>
     </nav>
   </header>
+  <body>
+    <script>
+   function calculate()
+      {
+          document.getElementById("txt").innerHTML = "";
+        var checkBoxes = document.getElementsByName("box");
+        for(var i=0; i < checkBoxes.length;i++)
+        {
+            if(checkBoxes[i].checked)
+            {           document.getElementById("txt").innerHTML += document.getElementById("lbl_" + checkBoxes[i].id).innerHTML
+            }
+        }
+
+      }
+    </script>
   <script src="../js/selectClass.js"></script>
   <form id="extras" hidden>
     	<label id="lbl_1">|21999 TR Calculus One|       </label>
@@ -144,11 +148,8 @@
   <span id="txt"></span>
 
 
-      <form action="./selectClass.html" > 
+      <form action="./selectClass.html" >
       <button type="submit">Add Classes</button>
-    </form> 
-  
-
-
+    </form>
 </body>
 </html>
