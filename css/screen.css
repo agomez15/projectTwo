@@ -80,7 +80,7 @@ img, audio, video {
 
 h3[id="student-name"]{
   
-  padding-top: 1.0em;
+ 
     
 }
 
@@ -299,3 +299,15 @@ header[id ="login_header"]{
 
 
 /* ===== STATE STYLES ===== */
+
+
+/* ======= MEDIA QUERIES ====== */
+
+@media screen and (min-width: 50em){
+  
+  .navbar {
+    display: flex;
+    /* display: none!important; */
+    
+  }  
+}
