@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
   <meta charset="utf-8" />
-  <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Ek+Mukta:200|Lora|Muli:300|Oswald:300|Roboto+Slab:300" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Ek+Mukta:200|Lora|Muli:300|Oswald:300|Roboto+Slab:300" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
   <link rel="stylesheet" media="screen" href="../css/screen.css" />
   <link rel="stylesheet" media="screen" href="../css/_normalize-form.css" />
@@ -34,13 +34,15 @@
         document.getElementById("txt").innerHTML = "";
       var checkBoxes = document.getElementsByName("box");
       for(var i=0; i < checkBoxes.length;i++)
-      { 
+      {
           if(checkBoxes[i].checked)
           {           document.getElementById("txt").innerHTML += document.getElementById("lbl_" + checkBoxes[i].id).innerHTML
           }
       }
-    
-    } 
+
+    }
+
+  
   </script>
 <h1> SELECT YOUR CLASS</h1>
 <!--Adding drop down list in floating panel
@@ -66,7 +68,7 @@
         <option value="Psychology">Psychology</option>
     </div>
 
--->
+
 
 <div>
   <select>
@@ -128,16 +130,16 @@
     </tr>
     <tr>
     	<td><label id="lbl_1"></label><input type="checkbox" name="box"  id="2" onchange="calculate()">&nbsp;</td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	<td>-</td>
+    	<td>-</td>
+    	<td>-</td>
+    	<td>-</td>
+    	<td>-</td>
     	<td>R</td>
     	<td>10:30am-12:20am</td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	<td>-</td>
+    	<td>-</td>
+    	<td>-</td>
     	<td>James R. Dabbert (P)</td>
     	<td>05/04-05/04</td>
     	<td>RE 121</td>
@@ -162,30 +164,35 @@
 
     <tr>
     	<td><input type="checkbox" name="name1" id="4" onchange="calculate()" />&nbsp;</td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	<td>-</td>
+    	<td>-</td>
+    	<td>-</td>
+    	<td>-</td>
+    	<td>-</td>
     	<td>R</td>
     	<td>02:00pm-04:00pm</td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	<td>-</td>
+    	<td>-</td>
+    	<td>-</td>
     	<td>James R. Dabbert (P)</td>
     	<td>05/04-05/04</td>
     	<td>RE 121</td>
     </tr>
     </table>
 
-  <button type="submit" value="./dropClass.html">Submit</button>
-  
-<h1>|Add These Classes:        |
-<span id="txt"></span>
+  <script>function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}</script>
 
+  <div class="popup" onclick="myFunction()">Click Here To Add Your Classes
+  <span class="popuptext" id="myPopup">Your classes have been added!</span>
+</div>
 
-
-
-
+  <h1>|Add These Classes:        |</h1>
+  <span id="txt"></span>
+<form action="./dropClass.html" > 
+      <button type="submit">Drop Classes</button>
+    </form>
 </body>
 </html>
